@@ -32,8 +32,6 @@ jobs:
           images: |
             "marinos-ventures/jobgpt-web"
           tags: |
-            type=ref,event=branch-{{version}}
-            type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=sha
